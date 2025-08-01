@@ -74,7 +74,7 @@ if "df_uploaded" in st.session_state and "bdd_df" in st.session_state:
                 "optimization": optimization,
                 "maille": maille,
                 "Nb_entrepot": Nb_entrepot,
-                "Col_Pays": Col_NUTS,
+                "Col_NUTS": Col_NUTS,
                 
             }
 
