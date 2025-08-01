@@ -98,6 +98,8 @@ if "df_uploaded" in st.session_state and "bdd_df" in st.session_state:
             st.experimental_rerun()
         else:
             st.error(f"❌ Erreur API : {response.status_code}")
+            st.write("🔎 Détail de l'erreur :")
+            st.code(response.text, language="json")
 
 # 📈 Affichage des résultats
 if "df_result" in st.session_state and "df_affectation" in st.session_state:
